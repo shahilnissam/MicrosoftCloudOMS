@@ -36,7 +36,7 @@ async function createNewMeetingAsync(userId) {
     const newMeeting = `/users/${userId}/calendar/events`;
     
     const event = {
-      subject: 'Customer Service Meeting',
+      subject: 'Candidate Service Meeting',
       start: {
           dateTime: startTime,
           timeZone: 'UTC'
