@@ -59,7 +59,7 @@ const App = () => {
   if (callAdapter) {
     return (
       <div>
-        <h1>Contact HR Service</h1>
+        <h1> BRT-OMS Communication Service | Contact HR Support Window</h1>
         <div className="wrapper">
           <CallComposite
             adapter={callAdapter}
@@ -69,7 +69,7 @@ const App = () => {
     );
   }
   if (!credential) {
-    return <>Failed to construct credential. Provided token is malformed.</>;
+    return <>Initializing BRT-OMS Communication Service. Please wait..</>;
   }
   if (message) {
     return <div>{message}</div>;
