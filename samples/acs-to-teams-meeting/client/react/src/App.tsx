@@ -11,7 +11,7 @@ const App = () => {
   const displayName = 'Guest'
   const [userId, setUserId] = useState<string>('');
   const [token, setToken] = useState<string>('');
-  const [teamsMeetingLink, setTeamsMeetingLink] = useState<string>('https://teams.microsoft.com/l/meetup-join/19%3ameeting_Zjg3YTgxZDEtMWYxMi00MjA3LTkxN2EtNjVlMTk3YWY1Y2I2%40thread.v2/0?context=%7b%22Tid%22%3a%223f83cb9e-c1b8-4e60-ab69-f6a4e65cdcbc%22%2c%22Oid%22%3a%228eb27107-13dd-4816-8d32-a70ffc0657a4%22%7d');
+  const [teamsMeetingLink, setTeamsMeetingLink] = useState<string>('https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTNiMTEyY2YtYjBkYi00N2E3LWJlZmMtZTQ4ZDA2ZWI3MmJk%40thread.v2/0?context=%7b%22Tid%22%3a%223f83cb9e-c1b8-4e60-ab69-f6a4e65cdcbc%22%2c%22Oid%22%3a%228eb27107-13dd-4816-8d32-a70ffc0657a4%22%7d');
   // const [teamsMeetingLink, setTeamsMeetingLink] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const credential = useMemo(() => {
@@ -49,7 +49,7 @@ const App = () => {
       //Call Azure Function to get the meeting link
       // const resTeams = await fetch(process.env.REACT_APP_TEAMS_MEETING_FUNCTION as string);
       // const link = await resTeams.text();
-      // setTeamsMeetingLink(link);
+      setTeamsMeetingLink('https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTNiMTEyY2YtYjBkYi00N2E3LWJlZmMtZTQ4ZDA2ZWI3MmJk%40thread.v2/0?context=%7b%22Tid%22%3a%223f83cb9e-c1b8-4e60-ab69-f6a4e65cdcbc%22%2c%22Oid%22%3a%228eb27107-13dd-4816-8d32-a70ffc0657a4%22%7d');
       // setMessage('');
       // console.log('Teams meeting link', link);
     }
