@@ -38,7 +38,7 @@ const App = () => {
   useEffect(() => {
     // commenting out for now
     const init = async () => {
-      setMessage('Getting ACS user');
+      setMessage('Getting ACS user..');
       //Call Azure Function to get the ACS user identity and token
       const res = await fetch(process.env.REACT_APP_ACS_USER_FUNCTION as string);
       const user = await res.json();
